@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Challenge</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>Hangman Challenge</h1>
+    <div class="players">
+        <div id="player1" class="player active">Player 1: <span id="score1">0</span></div>
+        <div id="player2" class="player">Player 2: <span id="score2">0</span></div>
+    </div>
+    <div id="timer">Time: 30s</div>
+    <div id="word-display"></div>
+    <div class="input-area">
+        <input type="text" id="letter-input" maxlength="1" placeholder="A">
+        <button id="guess-button">Guess</button>
+    </div>
+    <div id="guessed-letters">Guessed: </div>
+    <div id="hint"></div>
+    <div id="message"></div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
